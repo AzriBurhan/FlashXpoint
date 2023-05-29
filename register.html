@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashXpoint - Register</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <form class="login-container" name="loginForm">
+                <img src="./media/WhatsApp_Image_2023-05-28_at_6.21.52_PM-removebg-preview.png">
+                <h3 style="color: white">Create new account</h3>
+                <input type="text" id="username" placeholder="Username" name="username">
+                <input type="text" id="name" placeholder="Name" name="name">
+                <input type="email" id="email" placeholder="Email" name="email">
+                <input type="password" id="password" placeholder="Password" name="password">
+                <input type="submit" value="Submit" id="submitbtn" onclick="submitform()">
+                <p style="margin: 0"><a href="./login.html" class="registerlink">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <script>
+        submitform = () => {
+            // gather all the values
+            const email = document.forms["loginForm"]["email"].value;
+            const password = document.forms["loginForm"]["password"].value;
+            const username = document.forms["loginForm"]["username"].value;
+            const name = document.forms["loginForm"]["name"].value;
+            // check the conditions
+            if(!email || !password || !username || !name) {
+                alert("Complete all fields first!")
+                return;
+            }
+
+            alert("email: " + email + "\n" + "password: " + password + "\n" + "username: " + username + "\n" + "name: " + name)
+
+        }
+    </script>
+</body>
+</html>

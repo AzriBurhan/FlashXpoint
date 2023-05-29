@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+    background-image: url('./media/WhatsApp\ Image\ 2023-05-28\ at\ 5.51.04\ PM.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.container {
+    /* background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.9px);
+    -webkit-backdrop-filter: blur(2.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 100vh;
+    width: 100vw; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    height: 500px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #81d340 - default color */
+
+#email, #password, #username, #name {
+    width: 400px;
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 0;
+    outline: none;
+}
+
+#submitbtn {
+    width: 410px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+}
+
+#submitbtn:hover {
+    background-color: #81d340;
+    color: #fff;
+    cursor: pointer;
+}
+
+.registerlink {
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.registerlink:hover {
+    color: #81d340;
+}

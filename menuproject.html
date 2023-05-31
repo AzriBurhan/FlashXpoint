@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Style for the menu */
+    
+    .menu {
+      position: absolute;
+      top: 60px;
+      right: 40px;
+      display: flex;
+      color: whitesmoke;
+      font-family: Candara;
+    }
+
+    .menu-item {
+      margin-left: 10px;
+      position: relative;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f8f8f8;
+      padding: 10px;
+      z-index: 1;
+    }
+
+    .menu-item:hover .submenu {
+      display: block;
+    }
+
+    /* Center the greeting */
+    .greeting {
+      text-align: center;
+      margin-top: 280px;
+      color: white;
+      font-size: 60px;
+      font-family: Candara;
+    }
+    .greeting2{
+      text-align: center;
+      color: white;
+      font-size: 50px;
+    }
+
+    /* Style for the company logo */
+    .company-logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    
+    body {
+        background-image: url('background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+    }
+    
+    .submenu a {
+      text-decoration: none;
+      color: black;
+    }
+
+  
+    
+  </style>
+  
+</head>
+
+<body>
+  <div class="menu">
+    <div class="menu-item">
+      HOME
+      <div class="submenu">
+        <a href="login.html">Login Page</a>
+      </div>
+    </div>
+    <div class="menu-item">
+      DASHBOARD
+      <div class="submenu">
+        <a href="profile.html">Profile Page</a>
+      </div>
+    </div>
+    <div class="menu-item">
+      BOOKING
+      <div class="submenu">
+        <a href="booking.html">Booking Page</a>
+      </div>
+    </div>
+  </div>
+  <div class="greeting">
+    Welcome To Flashpoint Studio
+  </div>
+  <div class="greeting2">
+    Gaming Center
+  </div>
+  <div class="company-logo">
+    <img src="logo.png" alt="Company Logo" width="160" height="140">
+  </div>
+  <!-- test2 -->
+</body>
+</html>
